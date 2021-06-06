@@ -121,7 +121,7 @@ async def auto_filter(bot, update):
             
             results.append(
                 [
-                    InlineKeyboardButton(button_text, url=file_link)
+                    InlineKeyboardButton(🔘JOIN OUR CHANNEL🔘, url=https://t.me/CL_ALL1)
                 ]
             )
         
@@ -153,7 +153,7 @@ async def auto_filter(bot, update):
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"🎖️ Page 1/{len_result if len_result < max_pages else max_pages} 🎖️", callback_data="ignore")
         ])
         
         
