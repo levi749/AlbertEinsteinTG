@@ -89,13 +89,13 @@ async def cb_navg(bot, update: CallbackQuery):
 
     else:
         temp_results.append([
-            InlineKeyboardButton("⏪ Back", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("Next ⏩", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("🔙 Back", callback_data=f"navigate({index_val}|back|{query})"),
+            InlineKeyboardButton("Next 🔙", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"🎖️ Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🎖️", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
