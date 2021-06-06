@@ -25,6 +25,16 @@ async def start(bot, update):
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         
+<b>💡ɢʀᴏᴜᴘ
+@cl_chatgrp
+  
+💡 ᴄʜᴀɴɴᴇʟ
+@CLFilims
+
+🎯  ᴄʜᴀɴɴᴇʟs
+@CL_FILMm</b>""")
+
+
         if file_type == "document":
         
             await bot.send_document(
@@ -89,12 +99,12 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('🕵️ ᴄʀᴇᴀᴛᴏʀ', url='https://t.me/Levinomad_TG'),
+        InlineKeyboardButton('⚠️ɢʀᴏᴜᴘ', url ='https://t.me/cl_chatgrp')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+        InlineKeyboardButton('⚠️ᴄʜᴀɴɴᴇʟ', url='https://t.me/CL_ALL1')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('⚠️ᴄʜᴀɴɴᴇʟ', url='https://t.meCL_FILMs')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
