@@ -29,7 +29,7 @@ async def start(bot, update):
 @cl_chatgrp
   
 💡 ᴄʜᴀɴɴᴇʟ
-@CLFilims
+@CL_FILMm
 
 🎯  ᴄʜᴀɴɴᴇʟs
 @CL_FILMm</b>""")
@@ -48,7 +48,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💡 CHANNEL 💡', url="https://t.me/CL_ALL"
                                 )
                         ]
                     ]
@@ -67,7 +67,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💡 CHANNEL 💡', url="https://t.me/CL_ALL1"
                                 )
                         ]
                     ]
@@ -86,7 +86,8 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '💡 CHANNEL 💡', url="https://t.me/CL_ALL1"
+"
                                 )
                         ]
                     ]
@@ -104,7 +105,7 @@ async def start(bot, update):
     ],[
         InlineKeyboardButton('⚠️ᴄʜᴀɴɴᴇʟ', url='https://t.me/CL_ALL1')
     ],[
-        InlineKeyboardButton('⚠️ᴄʜᴀɴɴᴇʟ', url='https://t.meCL_FILMs')
+        InlineKeyboardButton('⚠️ᴄʜᴀɴɴᴇʟ', url='https://t.meCL_FILMm')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -122,7 +123,7 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('Home 🏠', callback_data='start'),
         InlineKeyboardButton('About 🚩', callback_data='about')
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
