@@ -121,7 +121,7 @@ async def auto_filter(bot, update):
             
             results.append(
                 [
-                    InlineKeyboardButton(🔘JOIN OUR CHANNEL🔘, url=https://t.me/CL_ALL1)
+                    InlineKeyboardButton(button_Text, url=)
                 ]
             )
         
