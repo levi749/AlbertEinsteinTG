@@ -13,17 +13,17 @@ db = Database()
 async def start(bot, update):
     
     try:
-        file_uid = update.command[1]
-    except IndexError:
-        file_uid = False
-    
-    if file_uid:
-        file_id, file_name, file_caption, file_type = await db.get_file(file_uid)
-        
-        if (file_id or file_type) == None:
-            return
-        
-        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+            user = await bot.get_chat_member(update_channel, update.chat.id)
+            if user.status == "kicked out":
+               await update.reply_text("🤭 Sorry Dude, You are B A N N E D 🤣🤣🤣")
+               return
+        except UserNotParticipant:
+            #await update.reply_text(f"Join @{update_channel} To Use Me")
+            await update.reply_text(
+                text="𝐘𝐨𝐮 𝐦𝐮𝐬𝐭 𝐣𝐨𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐓𝐡𝐢𝐬 𝐛𝐨𝐚𝐭 𝐢𝐬 𝐮𝐧𝐮𝐬𝐚𝐛𝐥𝐞\n<b>ꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n\n<a href='https://t.me/CLALL1'>©ꜰɪʟᴍ ᴢᴏɴᴇ</a></b>",
+                reply_markup=InlineKeyboardMarkup([
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/CL_FILMm")]
+              ]) file_caption != ("" or None) else ("<code>" + file_name + "</code>")
         
 <b>💡ɢʀᴏᴜᴘ
 @cl_chatgrp
